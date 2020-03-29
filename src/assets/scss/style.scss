@@ -14,6 +14,7 @@
 @import "images";
 @import "code";
 @import "grid";
+@import "container-grid";
 @import "tables";
 @import "forms";
 @import "buttons";
@@ -58,6 +59,7 @@ header {
   border-bottom: 1px solid $gray-200;
   width: 100%;
   position: relative;
+  margin-bottom: 50px;
 
   .navbar {
     height: 80px;
@@ -80,6 +82,118 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+.img-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.img-contain {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  height: 100%;
+
+  .tag {
+    z-index: 3;
+    font-size: 0.875rem;
+    background-color: $pink;
+    padding: 0.25rem 1.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $white;
+    min-height: 30px;
+    border-radius: 0 15px;
+    span {
+      font-weight: 300;
+    }
+  }
+
+  .img-wrapper {
+    height: 100%;
+    margin-bottom: 0;
+    border-radius: 0.9375rem;
+    overflow: hidden;
+  }
+
+  .meta-wrapper {
+    margin-top: 1rem;
+    h5 {
+      font-size: 1.125rem;
+      margin-bottom: 2px;
+    }
+    span {
+      font-size: 0.875rem;
+    }
+  }
+
+  &.card-featured {
+    overflow: hidden;
+    cursor: pointer;
+    height: 100%;
+    border-radius: 15px;
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scale(1.1);
+      transition: 0.5s transform ease-in-out;
+      z-index: 2;
+      @include gradient-y(rgba($black, 0), rgba($black, 0.51), 0%, 100%);
+    }
+
+    .img-wrapper {
+      z-index: 1;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scale(1.1);
+      transition: 0.25s transform ease-in-out;
+    }
+
+    .meta-wrapper {
+      z-index: 4;
+      color: $white;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      transform: translateY(0);
+      transition: 0.3s transform ease-in-out;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+    }
+
+    &:hover {
+      .meta-wrapper {
+        transform: translateY(-10px);
+      }
+      &:after {
+        transform: scale(1);
+      }
+      .img-wrapper {
+        transform: scale(1);
       }
     }
   }

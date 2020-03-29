@@ -1,0 +1,153 @@
+{
+  "asd1293uasdads1": {
+    "_id": "asd1293uasdads1",
+    "name": "Village Angga",
+    "type": "Hotel",
+    "imageUrls": [
+      {
+        "_id": "asd1293uasdads1",
+        "url": "/images/itemDetails1.png"
+      },
+      {
+        "_id": "asd1293uasdads1",
+        "url": "/images/itemDetails2.png"
+      },
+      {
+        "_id": "asd1293uasdads1",
+        "url": "/images/itemDetails3.png"
+      }
+    ],
+    "country": "Indonesia",
+    "city": "Bogor",
+    "price": "52",
+    "unit": "night",
+    "isPopular": true,
+    "hasBackyard": true,
+    "description": "<p>Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet, Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet</p> <p>Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet, Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet</p>",
+    "features": [
+      {
+        "_id": "asd1293uasdads1",
+        "qty": "3",
+        "name": "bedroom",
+        "imageUrl": "/images/ic_bedroom.svg"
+      },
+      {
+        "_id": "asd1293uasdads1",
+        "qty": "1",
+        "name": "living room",
+        "imageUrl": "/images/ic_livingroom.svg"
+      },
+      {
+        "_id": "asd1293uasdads1",
+        "qty": "2",
+        "name": "bath room",
+        "imageUrl": "/images/ic_bathroom.svg"
+      },
+      {
+        "_id": "asd1293uasdads1",
+        "qty": "1",
+        "name": "dining room",
+        "imageUrl": "/images/ic_diningroom.svg"
+      },
+      {
+        "_id": "asd1293uasdads1",
+        "qty": "10",
+        "name": "mbps",
+        "imageUrl": "/images/ic_wifi.svg"
+      },
+      {
+        "_id": "asd1293uasdads1",
+        "qty": "2",
+        "name": "units ready",
+        "imageUrl": "/images/ic_ac.svg"
+      },
+      {
+        "_id": "asd1293uasdads1",
+        "qty": "2",
+        "name": "refrigerator",
+        "imageUrl": "/images/ic_kulkas.svg"
+      },
+      {
+        "_id": "asd1293uasdads1",
+        "qty": "1",
+        "name": "television",
+        "imageUrl": "/images/ic_tv.svg"
+      }
+    ],
+    "activities": [
+      {
+        "_id": "asd1293uasdads1",
+        "name": "Kebun Park",
+        "type": "Nature",
+        "imageUrl": "/images/categoryItem1.png"
+      },
+      {
+        "_id": "asd1293uasdads1",
+        "name": "Water land",
+        "type": "Pool",
+        "imageUrl": "/images/categoryItem2.png"
+      },
+      {
+        "_id": "asd1293uasdads1",
+        "name": "Kebun Park",
+        "type": "Nature",
+        "imageUrl": "/images/categoryItem3.png"
+      },
+      {
+        "_id": "asd1293uasdads1",
+        "name": "Water land",
+        "type": "Pool",
+        "imageUrl": "/images/categoryItem4.png"
+      }
+    ],
+    "categories": [
+      {
+        "_id": "asd1293uasdads1",
+        "name": "House with beauty backyard",
+        "items": [
+          {
+            "_id": "asd1293uasdads1",
+            "name": "PSW Antasari",
+            "imageUrl": "/images/category1.png",
+            "country": "South Korea",
+            "city": "Seoul Flore",
+            "isPopular": false
+          },
+          {
+            "_id": "asd1293uasdads1",
+            "name": "Kuretakeso",
+            "imageUrl": "/images/category2.png",
+            "country": "South Korea",
+            "city": "Seoul Flore",
+            "isPopular": false
+          },
+          {
+            "_id": "asd1293uasdads1",
+            "name": "Arya Duta",
+            "imageUrl": "/images/category3.png",
+            "country": "South Korea",
+            "city": "Seoul Flore",
+            "isPopular": true
+          },
+          {
+            "_id": "asd1293uasdads1",
+            "name": "Grand Dhika",
+            "imageUrl": "/images/category4.png",
+            "country": "South Korea",
+            "city": "Seoul Flore",
+            "isPopular": false
+          }
+        ]
+      }
+    ],
+    "testimonial": {
+      "_id": "asd1293uasdads1",
+      "imageUrl": "/images/testimony2.png",
+      "name": "Happy Family",
+      "rate": 4.25,
+      "content": "What a great trip with my family and I should try again and again next time soon...",
+      "familyName": "Angga",
+      "familyOccupation": "UI Designer"
+    }
+  }
+}
