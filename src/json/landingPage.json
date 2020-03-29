@@ -174,11 +174,11 @@
   ],
   "testimonial": {
     "_id": "asd1293uasdads1",
-    "imageUrl": "/images/testimony1.png",
+    "imageUrl": "/images/testimonial-landingpages.jpg",
     "name": "Happy Family",
-    "rate": 4.5,
-    "content": "It was a great room and I believe people must try to use Staycation",
+    "rate": 1.275,
+    "content": "What a great trip with my family and I should try again next time soon ...",
     "familyName": "Angga",
-    "familyOccupation": "UI Designer"
+    "familyOccupation": "Product Designer"
   }
 }
