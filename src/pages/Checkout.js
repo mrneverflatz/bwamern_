@@ -45,6 +45,10 @@ export default class Checkout extends Component {
   render() {
     const { data } = this.state;
 
+    const checkout = {
+      duration: 3,
+    };
+
     const steps = {
       bookingInformation: {
         title: "Booking Information",
@@ -52,6 +56,7 @@ export default class Checkout extends Component {
         content: (
           <BookingInformation
             data={data}
+            checkout={checkout}
             ItemDetails={ItemDetails}
             onChange={this.onChange}
           />
@@ -64,6 +69,7 @@ export default class Checkout extends Component {
           <Payment
             data={data}
             ItemDetails={ItemDetails}
+            checkout={checkout}
             onChange={this.onChange}
           />
         ),
@@ -74,6 +80,7 @@ export default class Checkout extends Component {
         content: <Completed />,
       },
     };
+
     return (
       <>
         <Header isCentered />
@@ -86,6 +93,7 @@ export default class Checkout extends Component {
                 current={CurrentStep}
                 style={{ marginBottom: 50 }}
               />
+
               <Meta data={steps} current={CurrentStep} />
 
               <MainContent data={steps} current={CurrentStep} />
@@ -146,7 +154,7 @@ export default class Checkout extends Component {
                     isLight
                     onClick={prevStep}
                   >
-                    Back
+                    Cancel
                   </Button>
                 </Controller>
               )}

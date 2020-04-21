@@ -7,15 +7,12 @@ import logoBca from "assets/images/logo-bca.jpg";
 import logoMandiri from "assets/images/logo-mandiri.jpg";
 
 export default function Payment(props) {
-  const { data, ItemDetails } = props;
-
-  const checkout = {
-    duration: 1,
-  };
+  const { data, ItemDetails, checkout } = props;
 
   const tax = 10;
   const subTotal = ItemDetails.price * checkout.duration;
   const grandTotal = (subTotal * tax) / 100 + subTotal;
+
   return (
     <Fade>
       <div className="container" style={{ marginBottom: 30 }}>
