@@ -61,10 +61,10 @@ export default function Hero(props) {
                   width="36"
                   height="36"
                   src="/images/icon-treasure.svg"
-                  alt={`${props.data.treasures} Treasures`}
+                  alt={`${props.data.treasure} Treasures`}
                 />
                 <h6 className="mt-3">
-                  {formatNumber(props.data.treasures)}{" "}
+                  {formatNumber(props.data.treasure)}{" "}
                   <span className="text-gray-500 font-weight-light">
                     treasures
                   </span>

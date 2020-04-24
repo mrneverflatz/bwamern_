@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 
 import propTypes from "prop-types";
 
 import Button from "elements/Button";
 import { InputNumber, InputDate } from "elements/Form";
 
-export default class BookingForm extends Component {
+class BookingForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,19 +15,19 @@ export default class BookingForm extends Component {
         date: {
           startDate: new Date(),
           endDate: new Date(),
-          key: "selection"
-        }
-      }
+          key: "selection",
+        },
+      },
     };
   }
 
-  updateData = e => {
+  updateData = (e) => {
     this.setState({
       ...this.state,
       data: {
         ...this.state.data,
-        [e.target.name]: e.target.value
-      }
+        [e.target.name]: e.target.value,
+      },
     });
   };
 
@@ -40,8 +41,8 @@ export default class BookingForm extends Component {
       this.setState({
         data: {
           ...this.state.data,
-          duration: countDuration
-        }
+          duration: countDuration,
+        },
       });
     }
 
@@ -56,12 +57,25 @@ export default class BookingForm extends Component {
           ...this.state.data,
           date: {
             ...this.state.data.date,
-            endDate: endDate
-          }
-        }
+            endDate: endDate,
+          },
+        },
       });
     }
   }
+
+  startBooking = () => {
+    const { data } = this.state;
+    this.props.startBooking({
+      _id: this.props.itemDetails._id,
+      duration: data.duration,
+      date: {
+        startDate: data.date.startDate,
+        endDate: data.date.endDate,
+      },
+    });
+    this.props.history.push("/checkout");
+  };
 
   render() {
     const { data } = this.state;
@@ -109,7 +123,7 @@ export default class BookingForm extends Component {
           hasShadow
           isPrimary
           isBlock
-          onClick={startBooking}
+          onClick={this.startBooking}
         >
           Continue to Book
         </Button>
@@ -120,5 +134,7 @@ export default class BookingForm extends Component {
 
 BookingForm.propTypes = {
   itemDetails: propTypes.object,
-  startBooking: propTypes.func
+  startBooking: propTypes.func,
 };
+
+export default withRouter(BookingForm);
