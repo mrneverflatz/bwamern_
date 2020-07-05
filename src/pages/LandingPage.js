@@ -16,7 +16,7 @@ class LandingPage extends Component {
   }
 
   componentDidMount() {
-    window.title = "Staycation | Home";
+    document.title = "Staycation | Home";
     window.scrollTo(0, 0);
 
     if (!this.props.page.landingPage)
@@ -36,7 +36,7 @@ class LandingPage extends Component {
           refMostPicked={this.refMostPicked}
           data={page.landingPage.mostPicked}
         />
-        <Categories data={page.landingPage.categories} />
+        <Categories data={page.landingPage.category} />
         <Testimony data={page.landingPage.testimonial} />
         <Footer />
       </>

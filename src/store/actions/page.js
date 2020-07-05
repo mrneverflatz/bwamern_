@@ -9,5 +9,6 @@ export const fetchPage = (url, page) => (dispatch) => {
         [page]: response.data,
       },
     });
+    return response.data;
   });
 };

@@ -8,11 +8,11 @@ class TestInput extends React.Component {
     value: {
       startDate: new Date(),
       endDate: new Date(),
-      key: "selection"
-    }
+      key: "selection",
+    },
   };
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({ value: e.target.value });
   };
 
@@ -36,7 +36,7 @@ const setup = () => {
   return {
     container,
     wrapper,
-    input
+    input,
   };
 };
 

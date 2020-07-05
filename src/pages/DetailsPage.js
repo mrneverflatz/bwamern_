@@ -16,14 +16,17 @@ import { fetchPage } from "store/actions/page";
 
 class DetailsPage extends Component {
   componentDidMount() {
-    window.title = "Details Page";
     window.scrollTo(0, 0);
 
     if (!this.props.page[this.props.match.params.id])
-      this.props.fetchPage(
-        `/detail-page/${this.props.match.params.id}`,
-        this.props.match.params.id
-      );
+      this.props
+        .fetchPage(
+          `/detail-page/${this.props.match.params.id}`,
+          this.props.match.params.id
+        )
+        .then((response) => {
+          document.title = `Staycation | ${response.title}`;
+        });
   }
 
   render() {
