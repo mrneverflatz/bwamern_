@@ -131,7 +131,7 @@ class Checkout extends Component {
       <>
         <Header isCentered />
 
-        <Stepper steps={steps}>
+        <Stepper steps={steps} initialStep="payment">
           {(prevStep, nextStep, CurrentStep, steps) => (
             <>
               <Numbering

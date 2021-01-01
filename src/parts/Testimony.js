@@ -32,7 +32,7 @@ export default function Testimony({ data }) {
           </div>
           <div className="col">
             <h4 style={{ marginBottom: 40 }}>{data.name}</h4>
-            <Star value={data.rate} width={35} height={35} spacing={4} />
+            <Star value={data.rate} width={20} height={20} spacing={4} />
             <h5 className="h2 font-weight-light line-height-2 my-3">
               {data.content}
             </h5>

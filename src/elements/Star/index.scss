@@ -8,6 +8,7 @@
     position: absolute;
     display: inline-flex;
     mask: url(../../assets/images/icons/star.svg) no-repeat center left;
+    mask-size: cover;
     &:not(.placeholder) {
       z-index: 2;
 

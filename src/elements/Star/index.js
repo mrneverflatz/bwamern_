@@ -1,8 +1,7 @@
 import React from "react";
-
 import propTypes from "prop-types";
-
 import "./index.scss";
+
 export default function Star({ className, value, height, width, spacing }) {
   const decimals = Number(value) % 1;
 
@@ -16,13 +15,14 @@ export default function Star({ className, value, height, width, spacing }) {
         key={`star-${index}`}
         style={{
           left: index * width,
-          height: height,
           width: width,
-          marginRight: spacing
+          height: height,
+          marginRight: spacing,
         }}
       ></div>
     );
   }
+
   if (decimals > 0 && value <= 5)
     star.push(
       <div
@@ -31,7 +31,7 @@ export default function Star({ className, value, height, width, spacing }) {
         style={{
           left: leftPos,
           height: height,
-          width: decimals * width - spacing
+          width: decimals * width - spacing,
         }}
       ></div>
     );
@@ -44,9 +44,9 @@ export default function Star({ className, value, height, width, spacing }) {
         key={`starPlaceholder-${index}`}
         style={{
           left: index * width,
-          height: height,
           width: width,
-          marginRight: spacing
+          height: height,
+          marginRight: spacing,
         }}
       ></div>
     );
@@ -65,10 +65,10 @@ export default function Star({ className, value, height, width, spacing }) {
   );
 }
 
-Star.propTypes = {
+Star.protoType = {
   className: propTypes.string,
   value: propTypes.number,
   width: propTypes.number,
   height: propTypes.number,
-  spacing: propTypes.number
+  spacing: propTypes.number,
 };
